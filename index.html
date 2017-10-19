@@ -1,0 +1,40 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="textml; charset=utf-8" />
+    <title></title>
+    <script type="text/javascript" src="jquery.js"></script>
+</head>
+
+<body>
+<textarea name="textarea" id="text" cols="40" rows="10" onkeyup="cyx();"></textarea>
+
+<!--<textarea name="textarea" id="txt" cols="40" rows="10"></textarea>-->
+<button id="but">提交</button>
+</body>
+<script type="text/javascript">
+    
+    function cyx() {
+        var txt = $("#text").val().length;
+        if (txt > 60) {
+            $("#but").attr("disabled", true);
+        } else {
+            $("#but").attr("disabled", false);
+        }
+    }
+
+
+
+//    $(function () {
+//        $("#txt").keyup(function () {
+//            var txt = $("#txt").val().length;
+//            if (txt > 60) {
+//                $("#but").attr("disabled", true);
+//            } else {
+//                $("#but").attr("disabled", false);
+//            }
+//        })
+//    })
+</script>
+</html>
